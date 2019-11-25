@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const ScenarioSchema = new mongoose.Schema({
+const OccurrenceSchema = new mongoose.Schema({
   name: String,
   id: {type: Number, required: true},
   url: String,
@@ -8,5 +8,5 @@ const ScenarioSchema = new mongoose.Schema({
   modificationTime: Date
 });
 
-const Scenario = mongoose.model("Scenario", ScenarioSchema);
-module.exports = Scenario;
+const Occurrence = mongoose.model("Occurrence", OccurrenceSchema);
+module.exports = Occurrence;

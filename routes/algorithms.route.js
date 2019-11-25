@@ -3,7 +3,7 @@ var router = express.Router();
 const AlgorithmModel = require('../models/algorithm.model');
 
 /* GET all */
-router.get('/', async (req, res) => {
+router.get('/getall', async (req, res) => {
     const algorithms = await AlgorithmModel.find({});
     try {
       res.send(algorithms);

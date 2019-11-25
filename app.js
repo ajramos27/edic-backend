@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 var users = require('./routes/users');
 
 var algorithms = require('./routes/algorithms.route');
-var ocurrences = require('./routes/ocurrences.route');
+var occurrences = require('./routes/ocurrences.route');
+var species = require('./routes/species.route');
 var scenarios = require('./routes/scenarios.route');
 var experiments = require('./routes/experiments.route');
 
@@ -57,9 +58,10 @@ app.use('/api/v1/users', users);
 
 //Elseweb
 app.use('/api/v1/algorithms', algorithms);
-app.use('/api/v1/ocurrences', ocurrences);
+app.use('/api/v1/occurrences', occurrences);
+app.use('/api/v1/species', species);
 //app.use('/api/v1/scenarios', scenarios);
-//app.use('/api/v1/experiments', experiments);
+app.use('/api/v1/experiments', experiments);
 
 
 module.exports = app;
