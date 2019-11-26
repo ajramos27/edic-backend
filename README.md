@@ -1,4 +1,4 @@
-# elseweb-backend
+# edic-backend
 
 1. Download and install NodeJS (I'm using version 12.1)
 https://nodejs.org/en/
